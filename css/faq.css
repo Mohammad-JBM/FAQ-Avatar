@@ -1,0 +1,284 @@
+#faqPanel {
+    position: absolute;
+    top: 150px;
+    right: 30px;
+    width: 300px;
+    height: auto;
+    max-height: 400px;
+    background-color: rgba(60, 50, 100, 0.95);
+    border-radius: 15px;
+    color: white;
+    font-family: Arial, sans-serif;
+    padding: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    display: none;
+    overflow-y: auto;
+    z-index: 10;
+    border: 2px solid rgba(150, 150, 255, 0.5);
+    text-align: right;
+    font-family: yekan;
+}
+
+h2 {
+    text-align: right;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-size: 22px;
+    color: #ffa500;
+}
+
+.question {
+    margin: 10px 0;
+    padding: 8px 15px;
+    background-color: rgba(90, 70, 120, 0.8);
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 10px;
+    text-align: right;
+    font-family: yekan;
+}
+
+.question:hover {
+    background-color: rgba(150, 100, 255, 0.8);
+    color: #ffd700;
+}
+
+#closeButton {
+    background-color: #ff6347;
+    color: white;
+    padding: 8px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+    display: block;
+    width: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: yekan;
+}
+
+#closeButton:hover {
+    background-color: #ff4500;
+}
+
+
+#faqPanel::-webkit-scrollbar {
+    width: 8px;
+    background-color: rgba(60, 50, 100, 0.95);
+}
+
+#faqPanel::-webkit-scrollbar-thumb {
+    background-color: rgba(150, 100, 255, 0.8);
+    border-radius: 10px;
+    border: 2px solid rgba(60, 50, 100, 0.95);
+}
+
+#faqPanel::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(150, 100, 255, 1);
+}
+
+
+#faqPanel {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(150, 100, 255, 0.8) rgba(60, 50, 100, 0.95);
+}
+
+
+@font-face {
+    font-family: yekan;
+    src: url("./fonts/Yekan.woff");
+}
+
+@font-face {
+    font-family: roboto;
+    src: url("./fonts/RobotoCondensed-Bold.ttf");
+}
+
+body.lang-fa {
+    direction: rtl;
+    font-family: yekan;
+    text-align: right;
+}
+
+body.lang-en {
+    direction: ltr;
+    font-family: roboto;
+    text-align: left;
+}
+
+body.lang-fa #faqTitle,
+body.lang-fa .question,
+body.lang-fa #closeButton,
+body.lang-fa #langSelector span,
+body.lang-fa #langMenu button {
+    font-family: yekan;
+}
+
+body.lang-en #faqTitle,
+body.lang-en .question,
+body.lang-en #closeButton,
+body.lang-en #langSelector span,
+body.lang-en #langMenu button {
+    font-family: roboto;
+}
+
+#faqPanel {
+    position: absolute;
+    top: 150px;
+    right: 30px;
+    width: 300px;
+    max-height: 400px;
+    background-color: rgba(60, 50, 100, 0.95);
+    border-radius: 15px;
+    color: white;
+    padding: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    display: none;
+    overflow-y: auto;
+    z-index: 10;
+    border: 2px solid rgba(150, 150, 255, 0.5);
+    transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 768px) {
+    #faqPanel {
+        top: 50%;
+        left: 50%;
+        right: auto;
+        transform: translate(-50%, -50%);
+    }
+}
+
+#faqHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#faqTitle {
+    font-size: 22px;
+    color: #ffa500;
+    margin: 0;
+}
+
+#langSelector {
+    position: relative;
+    z-index: 15;
+}
+
+#langSelector span {
+    cursor: pointer;
+    color: white;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+
+#langMenu {
+    margin-top: 5px;
+    background-color: rgba(60, 50, 100, 0.95);
+    border-radius: 8px;
+    padding: 4px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 28px;
+    left: 0;
+}
+
+#langMenu.hidden {
+    display: none;
+}
+
+#langMenu button {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin: 4px 0;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 8px;
+}
+
+#langMenu button img {
+    width: 16px;
+    height: 16px;
+    object-fit: cover;
+    border-radius: 2px;
+}
+
+#closeButton {
+    margin-top: 15px;
+    padding: 8px 12px;
+    background-color: rgba(200, 0, 0, 0.7);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#closeButton:hover {
+    background-color: rgba(255, 0, 0, 0.9);
+}
+
+.question {
+    background-color: rgba(255, 255, 255, 0.05);
+    border: none;
+    color: white;
+    padding: 8px 12px;
+    margin-bottom: 8px;
+    border-radius: 8px;
+    width: 100%;
+    text-align: inherit;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.question:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.globe-icon {
+    width: 16px;
+    height: 16px;
+    margin-left: 6px;
+    margin-right: 6px;
+    vertical-align: middle;
+    filter: invert(1);
+}
+
+body.lang-en #faqPanel {
+    direction: ltr;
+    text-align: left;
+}
+
+body.lang-fa #faqPanel {
+    direction: rtl;
+    text-align: right;
+}
+
+/* ََArabic-Lang */
+body.lang-ar {
+    direction: rtl;
+    font-family: yekan;
+    text-align: right;
+}
+
+body.lang-ar #faqTitle,
+body.lang-ar .question,
+body.lang-ar #closeButton,
+body.lang-ar #langSelector span,
+body.lang-ar #langMenu button {
+    font-family: yekan;
+}

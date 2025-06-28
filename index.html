@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fa">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/faq.css" />
+    <script src="https://cdn.jsdelivr.net/gh/aframevr/aframe@d6fa1c3890a15e05cf63a178ebf76d98d1e413f8/dist/aframe-master.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/c-frame/aframe-extras@7.4.0/dist/aframe-extras.min.js"></script>
+    <title>Dashtban</title>
+  </head>
+
+  <body class="lang-fa">
+    <!-- FAQ Panel -->
+    <div id="faqPanel">
+      <div id="faqHeader">
+        <!-- FAQ Title -->
+        <h2 id="faqTitle"></h2>
+        <!-- Language Selector -->
+        <div id="langSelector">
+          <span id="langText">
+            <img src="./img/globe2.svg" alt="globe" class="globe-icon" />
+            Language
+          </span>
+          <div id="langMenu" class="hidden">
+            <button data-lang="fa">
+              <img src="./img/ir.svg" alt="IR" />
+              <span>فارسی</span>
+            </button>
+            <button data-lang="en">
+              <img src="./img/sh.svg" alt="EN" />
+              <span>English</span>
+            </button>
+            <button data-lang="ar">
+              <img src="./img/sa.svg" alt="AR" />
+              <span>Arabic</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Questions -->
+      <div id="questionsContainer"></div>
+      <button id="closeButton">خروج</button>
+    </div>
+
+    <!-- A-Frame Scene -->
+    <a-scene cursor="rayOrigin: mouse">
+      <a-assets>
+        <a-asset-item
+          id="avatarModel1"
+          src="./glb/Avatar.glb"
+          scale="1 1 1"
+        ></a-asset-item>
+      </a-assets>
+      <a-entity id="avatarsContainer"></a-entity>
+      <a-entity
+        id="rig"
+        movement-controls="constrainToNavMesh:true; speed: 0.11"
+        position="0 0 0"
+        rotation="0 0 0"
+      >
+        <a-entity
+          id="player"
+          class="camera"
+          camera="fov: 60"
+          position="0 2.2 0"
+          look-controls
+        ></a-entity>
+      </a-entity>
+    </a-scene>
+    <!-- FAQ JS -->
+    <script src="./js/faq.js"></script>
+  </body>
+</html>
