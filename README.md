@@ -105,7 +105,7 @@ A responsive and multilingual interactive FAQ system powered by a **3D animated 
 
 ## ✨ Credits
 
-* 👤 Author: [**Mohammad JBM**](https://github.com/MohammadJBM)
+* 👤 Author: [**Mohammad JBM**](https://github.com/Mohammad-JBM)
 * 🎮 Built with [**A-Frame**](https://aframe.io)
 * 🔤 Fonts:
 
