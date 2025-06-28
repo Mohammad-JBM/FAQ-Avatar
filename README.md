@@ -98,9 +98,9 @@ A responsive and multilingual interactive FAQ system powered by a **3D animated 
 
 ## 📸 Screenshots
 
-| Persian (RTL)                                              | English (LTR)                                              |
-| ---------------------------------------------------------- | ---------------------------------------------------------- |
-| ![fa] | ![en] |
+| Persian (RTL) | English (LTR)|
+| ------------- | -------------|
+|      [fa]     |     [en]     |
 
 ---
 
