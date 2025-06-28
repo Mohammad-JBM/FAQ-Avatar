@@ -19,8 +19,6 @@ A responsive and multilingual interactive FAQ system powered by a **3D animated 
 
 ## 📁 Project Structure
 
-```
-
 📦 3D-Avatar-FAQ-Panel
 ├── index.html
 ├── css/
@@ -42,9 +40,6 @@ A responsive and multilingual interactive FAQ system powered by a **3D animated 
 │   └── Avatar.glb
 └── README.md
 
-````
-
----
 
 ## 🔤 Add a New Language
 
@@ -54,7 +49,7 @@ A responsive and multilingual interactive FAQ system powered by a **3D animated 
      "faqTitle": "Frequently Asked Questions",
      "close": "Close"
    }
-````
+
 
 2. Extend the `faq` object in `avatarsData` in `main.js`:
 
