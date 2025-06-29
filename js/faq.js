@@ -149,5 +149,8 @@ document.querySelectorAll("#langMenu button").forEach((btn) => {
   });
 });
 
-document.body.classList.add(`lang-${currentLang}`);
-loadTranslations(currentLang);
+window.addEventListener("DOMContentLoaded", () => {
+  document.body.classList.add(`lang-${currentLang}`);
+  loadTranslations(currentLang);
+});
+
