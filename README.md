@@ -113,3 +113,15 @@ A responsive and multilingual interactive FAQ system powered by a **3D animated 
   * [Roboto Condensed](https://fonts.google.com/specimen/Roboto+Condensed) for English
 
 > ⭐ If you like this project, give it a star and follow for more creative web3/metaverse experiments by Mohammad JBM!
+
+---
+
+## 📜 License
+
+This project is licensed under the **JBM Non-Commercial License v1.0**.  
+You may **use, copy, and modify** this work for **personal, educational, and non-commercial purposes only**.  
+**Commercial use, resale, or rebranding is strictly prohibited** without written permission from the copyright holder.
+
+© 2025 Mohammad JBM — All Rights Reserved  
+🔗 [Read the full license here](./LICENSE)
+

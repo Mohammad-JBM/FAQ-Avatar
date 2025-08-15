@@ -154,3 +154,7 @@ window.addEventListener("DOMContentLoaded", () => {
   loadTranslations(currentLang);
 });
 
+// © 2025 Mohammad JBM — All Rights Reserved
+// Licensed under JBM Non-Commercial License v1.0 (A-Frame Component)
+// Non-commercial use only. Attribution required. No rebranding or resale.
+// See LICENSE for full terms.
